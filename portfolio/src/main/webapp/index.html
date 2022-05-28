@@ -1,19 +1,162 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Preetham Minchu's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+</head>
+
+<body>
+
+
+    <h1>
+        <center>Preetham Minchu</center>
+    </h1>
+    <div id="welcome-message">Welcome! My name is Preetham Minchu. I am a rising second year computer science and
+        finance major at the
+        University of Virginia!
+        I am passionate about software engineering and I have experience working in Frontend Development and Data
+        Science.
     </div>
-  </body>
+    
+        <div class="fam-pics">
+            <img class="pics" src="./images/image.JPG" alt="Minchu Fam">
+            <img class="pics" src="./images/minchu-fam.JPG" alt="Minchu Fam">
+            <img class="pics" src="./images/me&mom.JPG" alt="Minchu Fam">
+        </div>
+        <div class="modal-page">
+
+            <div id="mod1-container">
+                <div class="modal" id="mod1">
+                    <h1><center>Data Science Intern</center></h1>
+                    <center><p>
+                        ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, eius mollitia quia doloremque facere itaque officia ipsam corrupti numquam molestias, reprehenderit neque dolorem rerum nam, quibusdam earum aut! Voluptatem, quod.
+                    </p></center>
+                    <center>
+                        <button id="mod1-close" onclick="mod1Close()">
+                            close
+                        </button>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="modal-page">
+
+            <div id="mod2-container">
+                <div class="modal" id="mod2">
+                    <h1><center>Innovation Tech Intern</center></h1>
+                    <center><p>
+                        ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, eius mollitia quia doloremque facere itaque officia ipsam corrupti numquam molestias, reprehenderit neque dolorem rerum nam, quibusdam earum aut! Voluptatem, quod.
+                    </p></center>
+                    <center>
+                        <button id="mod2-close" onclick="mod2Close()">
+                            close
+                        </button>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="modal-page">
+
+            <div id="mod3-container">
+                <div class="modal" id="mod3">
+                    <h1><center>Software Engineer Intern</center></h1>
+                    <center><p>
+                        ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, eius mollitia quia doloremque facere itaque officia ipsam corrupti numquam molestias, reprehenderit neque dolorem rerum nam, quibusdam earum aut! Voluptatem, quod.
+                    </p></center>
+                    <center>
+                        <button id="mod3-close" onclick="mod3Close()">
+                            close
+                        </button>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="modal-page">
+
+            <div id="mod4-container">
+                <div class="modal" id="mod4">
+                    <h1><center>Data Science Researcher</center></h1>
+                    <center><p>
+                        ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, eius mollitia quia doloremque facere itaque officia ipsam corrupti numquam molestias, reprehenderit neque dolorem rerum nam, quibusdam earum aut! Voluptatem, quod.
+                    </p></center>
+                    <center>
+                        <button id="mod4-close" onclick="mod4Close()">
+                            close
+                        </button>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <div id="prof-pers">
+        <div class="sections professional">
+            <h1><center>Professional Life</center></h1>
+            <div id="projects">
+                <h3><center><strong>Projects</strong></center></h3>
+                <div id="project-list">
+                    
+                    <button class="proj" onclick="window.open('https://github.com/PreethamM03/Password-Manager', '_blank');"><center>Password Manager</center></button>
+                    <button class="proj" onclick="window.open('https://github.com/PreethamM03/DERI-Project', '_blank');"><center>Twitter Bot Scraping</center></button>
+                    <button class="proj" onclick="window.open('https://github.com/PreethamM03/Landing-Page', '_blank');"><center>Profesional Landing Page</center></button>
+                    <button class="proj" onclick="window.open('https://github.com/PreethamM03/Password-Manager', '_blank');"><center>Etch a Sketch</center></button>
+                </div>
+
+                    
+
+            </div>
+
+        <div class="exp-box">
+            <h3><center><strong>Professional Experience</strong></center></h3>
+            <div id="experience-list">
+                <Button id="mod1-button" class= "exp-buttons" onclick="mod1PopUp()">Data Science Intern</Button>
+                <Button id="mod2-button" class= "exp-buttons" onclick="mod2PopUp()">Innovation Tech Intern</Button>
+                <Button id="mod3-button" class= "exp-buttons" onclick="mod3PopUp()">Software Engineer Intern</Button>
+                <Button id="mod4-button" class= "exp-buttons" onclick="mod4PopUp()">Data Science Researcher</Button>
+
+
+            </div>
+
+        </div>
+
+        </div>
+
+
+        <div class="sections personal">
+            <h1><center>Personal Life</center></h1>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="links">
+        <a href="https://github.com/preethamm03">
+            <button class="but">
+                Github
+            </button>
+        </a>
+        <a href="https://www.linkedin.com/in/preetham-madesh-0b55741b2/">
+            <button class="but">
+                LinkedIn
+            </button>
+        </a>
+    </div>
+
+    <p>Click <a href="/hello">here</a> to see content created by server code.</p>
+    <p>Click here to get a random message:</p>
+    <button onclick="addRandomGreeting()">Hello</button>
+    <div id="greeting-container"></div>
+
+
+</body>
+
 </html>
