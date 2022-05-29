@@ -82,3 +82,10 @@ function mod4Close(){
 }
 
 
+async function showFunFact(){
+    const response = await fetch('/hello');
+    const fact = await response.text();
+
+    const factpara = document.getElementById('fact')
+    factpara.innerText = fact;
+}
