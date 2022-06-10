@@ -4,162 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <title>Preetham Minchu's Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </head>
 
 <body>
+    <script>
+        AOS.init();
+      </script>
 
+<div class="top">
+    <header>
+        <nav class="nav">
+            <ul class="nav-list">
+                <div><a href="./prof.html">Experience</a></div>
+                <center><div><a href="./index.html">Home</a></div></center>
+                <div><a href="./proj.html">Projects</a></div>
+            </ul>
+        </nav>
 
-    <h1>
-        <center>Preetham Minchu</center>
-    </h1>
-    <div id="welcome-message">Welcome! My name is Preetham Minchu. I am a rising second year computer science and
+    </header>
+-        <h1 data-aos="fade-left">
+    <center>Preetham Minchu</center>
+</h1>
+    <div data-aos="fade-right"id="welcome-message">Welcome! My name is Preetham Minchu. I am a rising second year computer science and
         finance major at the
         University of Virginia!
         I am passionate about software engineering and I have experience working in Frontend Development and Data
         Science.
     </div>
+
+    <div class="fam-pics" data-aos="zoom-out-up">
+        <img class="pics" src="./images/image.JPG" alt="Minchu Fam">
+        <img class="pics" src="./images/minchu-fam.JPG" alt="Minchu Fam">
+        <img class="pics" src="./images/me&mom.JPG" alt="Minchu Fam">
+    </div>
     
-        <div class="fam-pics">
-            <img class="pics" src="./images/image.JPG" alt="Minchu Fam">
-            <img class="pics" src="./images/minchu-fam.JPG" alt="Minchu Fam">
-            <img class="pics" src="./images/me&mom.JPG" alt="Minchu Fam">
-        </div>
-        <div class="modal-page">
+    <button class="but-center" onclick="document.getElementById('personal').scrollIntoView();"><h2>Contact Me!</h2></button>
 
-            <div id="mod1-container">
-                <div class="modal" id="mod1">
-                    <h1><center>Data Science Intern</center></h1>
-                    <center><p>
-                        ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, eius mollitia quia doloremque facere itaque officia ipsam corrupti numquam molestias, reprehenderit neque dolorem rerum nam, quibusdam earum aut! Voluptatem, quod.
-                    </p></center>
-                    <center>
-                        <button id="mod1-close" onclick="mod1Close()">
-                            close
-                        </button>
-                    </center>
-                </div>
+</div>
+
+
+
+
+
+
+       
+
+
+
+
+
+
+    <div class="sections" id="personal">
+        <!--<h1>
+            <center>Personal Life</center>
+        </h1>
+        <button id="fun-fact" onclick="showFunFact();">
+            Fun Fact About Me!
+        </button>
+        <p id="fact"></p>-->
+       
+        
+    
+        <div id="questionaire" data-aos="zoom-out-up">
+            <div class="center">
+                <h1>Contact Details!</h1>
+                <form id=form action="/form-handler" method="POST">
+                    <div class="txt_field">
+                        <input name="q1" type="text" required>
+                        <span></span>
+                        <label for="q1">What is your name?</label>
+                    </div>
+
+                    <div class="txt_field">
+                        <input name="q1"type="text" required>
+                        <span></span>
+                        <label for="q2">What is your Email?</label>
+                    </div>
+
+                    <div class="txt_field">
+                        <input name="q1" type="text" required>
+                        <span></span>
+                        <label for="q3">What is your Phone Number?</label>
+                    </div>
+                    <button type="submit" value="Submit"><span id="btn-txt">Submit!</span></button>
+                </form>
             </div>
-        </div>
-        <div class="modal-page">
-
-            <div id="mod2-container">
-                <div class="modal" id="mod2">
-                    <h1><center>Innovation Tech Intern</center></h1>
-                    <center><p>
-                        ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, eius mollitia quia doloremque facere itaque officia ipsam corrupti numquam molestias, reprehenderit neque dolorem rerum nam, quibusdam earum aut! Voluptatem, quod.
-                    </p></center>
-                    <center>
-                        <button id="mod2-close" onclick="mod2Close()">
-                            close
-                        </button>
-                    </center>
-                </div>
+            <div id="fact-container">
+                <div id="fact"></div>
             </div>
-        </div>
-        <div class="modal-page">
-
-            <div id="mod3-container">
-                <div class="modal" id="mod3">
-                    <h1><center>Software Engineer Intern</center></h1>
-                    <center><p>
-                        ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, eius mollitia quia doloremque facere itaque officia ipsam corrupti numquam molestias, reprehenderit neque dolorem rerum nam, quibusdam earum aut! Voluptatem, quod.
-                    </p></center>
-                    <center>
-                        <button id="mod3-close" onclick="mod3Close()">
-                            close
-                        </button>
-                    </center>
-                </div>
+            
+            
+            <div class="links">
+                <a href="https://github.com/preethamm03">
+                    <button class="but">
+                        Github
+                    </button>
+                </a>
+                <button class="but" onclick="showFunFact();">
+                        Fun-Fact!
+                    </button>
+                <a href="https://www.linkedin.com/in/preetham-madesh-0b55741b2/">
+                    <button class="but">
+                        LinkedIn
+                    </button>
+                </a>
             </div>
+            
         </div>
-        <div class="modal-page">
-
-            <div id="mod4-container">
-                <div class="modal" id="mod4">
-                    <h1><center>Data Science Researcher</center></h1>
-                    <center><p>
-                        ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, eius mollitia quia doloremque facere itaque officia ipsam corrupti numquam molestias, reprehenderit neque dolorem rerum nam, quibusdam earum aut! Voluptatem, quod.
-                    </p></center>
-                    <center>
-                        <button id="mod4-close" onclick="mod4Close()">
-                            close
-                        </button>
-                    </center>
-                </div>
-            </div>
-        </div>
-
-
-
-
-    <div id="prof-pers">
-        <div class="sections professional">
-            <h1><center>Professional Life</center></h1>
-            <div id="projects">
-                <h3><center><strong>Projects</strong></center></h3>
-                <div id="project-list">
-                    
-                    <button class="proj" onclick="window.open('https://github.com/PreethamM03/Password-Manager', '_blank');"><center>Password Manager</center></button>
-                    <button class="proj" onclick="window.open('https://github.com/PreethamM03/DERI-Project', '_blank');"><center>Twitter Bot Scraping</center></button>
-                    <button class="proj" onclick="window.open('https://github.com/PreethamM03/Landing-Page', '_blank');"><center>Profesional Landing Page</center></button>
-                    <button class="proj" onclick="window.open('https://github.com/PreethamM03/Password-Manager', '_blank');"><center>Etch a Sketch</center></button>
-                </div>
-
-                    
-
-            </div>
-
-        <div class="exp-box">
-            <h3><center><strong>Professional Experience</strong></center></h3>
-            <div id="experience-list">
-                <Button id="mod1-button" class= "exp-buttons" onclick="mod1PopUp()">Data Science Intern</Button>
-                <Button id="mod2-button" class= "exp-buttons" onclick="mod2PopUp()">Innovation Tech Intern</Button>
-                <Button id="mod3-button" class= "exp-buttons" onclick="mod3PopUp()">Software Engineer Intern</Button>
-                <Button id="mod4-button" class= "exp-buttons" onclick="mod4PopUp()">Data Science Researcher</Button>
-
-
-            </div>
-
-        </div>
-
-        </div>
-
-
-        <div class="sections personal">
-            <h1><center>Personal Life</center></h1>
-            <button id="fun-fact" onclick="showFunFact();">
-                Fun Fact About Me!
-            </button>
-            <p id="fact"></p>
-        </div>
+     
     </div>
 
-
-
-
-
-
-
-    <div class="links">
-        <a href="https://github.com/preethamm03">
-            <button class="but">
-                Github
-            </button>
-        </a>
-        <a href="https://www.linkedin.com/in/preetham-madesh-0b55741b2/">
-            <button class="but">
-                LinkedIn
-            </button>
-        </a>
-    </div>
-
-    <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-    <p>Click here to get a random message:</p>
-    <button onclick="addRandomGreeting()">Hello</button>
-    <div id="greeting-container"></div>
-
+        
 
 </body>
 
