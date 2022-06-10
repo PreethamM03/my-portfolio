@@ -16,13 +16,69 @@
  * Adds a random greeting to the page.
  */
 function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+    const greetings =
+        ['My favorite food is donuts.',
+            'I\'ve had surgery 3 times.',
+            'My favorite TV show of all time is Prison Break.',
+            'I play basketball.'];
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
 
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+    // Pick a random greeting.
+    const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+
+    // Add it to the page.
+    const greetingContainer = document.getElementById('greeting-container');
+    greetingContainer.innerText = greeting;
+
+
 }
+function mod1PopUp() {
+    const mod1Container = document.getElementById('mod1-container');
+
+    mod1Container.classList.add('show');
+
+
+};
+function mod1Close(){
+    const mod1Container = document.getElementById('mod1-container');
+    mod1Container.classList.remove('show');
+
+}
+function mod2PopUp() {
+    const mod2Container = document.getElementById('mod2-container');
+
+    mod2Container.classList.add('show');
+
+
+};
+function mod2Close(){
+    const mod2Container = document.getElementById('mod2-container');
+    mod2Container.classList.remove('show');
+
+}
+function mod3PopUp() {
+    const mod3Container = document.getElementById('mod3-container');
+
+    mod3Container.classList.add('show');
+
+
+};
+function mod3Close(){
+    const mod3Container = document.getElementById('mod3-container');
+    mod3Container.classList.remove('show');
+
+}
+function mod4PopUp() {
+    const mod4Container = document.getElementById('mod4-container');
+
+    mod4Container.classList.add('show');
+
+
+};
+function mod4Close(){
+    const mod4Container = document.getElementById('mod4-container');
+    mod4Container.classList.remove('show');
+
+}
+
+
