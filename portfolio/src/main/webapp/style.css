@@ -1,11 +1,108 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: #d66d75;
+    scroll-behavior: smooth;
 
 
-#greeting-container {
-    margin-top: 20px;
 }
-#welcome-message {
+
+header{
+    padding: 2em;
+}
+.nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center
+}
+.nav-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
     display: flex;
     justify-content: center;
+    gap:100px;
+}
+.nav-list a:nth-child(2){
+}
+.nav-list  a{
+    background: linear-gradient(to right, #c33764, #1d2671);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    margin: 0 auto;
+    text-decoration: none;
+    -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+}
+.nav-list a:hover,
+.nav-list a:focus{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+    margin: 4px 5px 6px;
+    transition: .5s;
+
+}
+
+
+.top{
+    padding-bottom: 400px;
+    height: 100vh;
+    /*background: linear-gradient(to bottom ,#d6ae7b, #eacda3);*/
+    background: linear-gradient(to bottom right, #998356, #D76D77);
+
+}
+.top h2{
+    background: linear-gradient(to bottom right, #998356, #D76D77);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 20px;
+
+}
+.top button{
+    margin: 10px;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #FFF;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #c33764, #1d2671);
+}
+.top button:hover{
+    background-position: right center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin: 8px 10px 12px;
+}
+
+ h1, h3 {
+    background: linear-gradient(to right, #c33764, #1d2671);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ label {
+    background: linear-gradient(to right, #D76D77, #998356);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#welcome-message  {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #c33764, #1d2671);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     margin: 0 auto;
     width: 700px;
@@ -14,13 +111,13 @@
 }
 .fam-pics {
     display: flex;
-    background-color: #AC9362;
+    background: linear-gradient(to right, #c33764, #1d2671);
     justify-content: center;
     margin: 0 auto;
-    width: 75%;
-    border-radius: 10px;
+    width: 75vw;
+    border-radius: 15px;
     margin-top: 10px;
-    border: 5px solid #85144b;
+   border: 5px solid #d66d75;
 
 
 }
@@ -30,36 +127,56 @@
     width: 300px;
     margin: 10px;
     border-radius: 10px;
-    border: 2px solid #85144b;
+    /*border: 2px solid #85144b;*/
 }
-#prof-pers{
-    display: flex;
-    justify-content: space-around;
+
+.sections {
+    height: 100vh;
 
 }
-.sections {
-    height: 450px;
-    width: 40%;
-    background-color: #AC9362;
-    margin: 10px;
-    border: 5px solid #85144b;
+#personal{
+    height: 100vh;
+    background: linear-gradient(to bottom left, #D76D77, #998356);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
 
 }
 .but {
-    background-color: #3D9970;
+    background-image:  linear-gradient(30deg, #998356 12%, transparent 12.5%, transparent 87%, #998356 87.5%, #998356), linear-gradient(150deg, #998356 12%, transparent 12.5%, transparent 87%, #998356 87.5%, #998356), linear-gradient(30deg, #998356 12%, transparent 12.5%, transparent 87%, #998356 87.5%, #998356), linear-gradient(150deg, #998356 12%, transparent 12.5%, transparent 87%, #998356 87.5%, #998356), linear-gradient(60deg, rgba(153,131,86,0.5) 25%, transparent 25.5%, transparent 75%, rgba(153,131,86,0.5) 75%, rgba(153,131,86,0.5)), linear-gradient(60deg, rgba(153,131,86,0.5) 25%, transparent 25.5%, transparent 75%, rgba(153,131,86,0.5) 75%, rgba(153,131,86,0.5));
+background-size: 20px 35px;
+background-position: 0 0, 0 0, 10px 17.5px, 10px 17.5px, 0 0, 10px 17.5px;
+background-color: #d76d77;
     border: 3px solid #85144b;
+    border-radius: 5px;
+
     height: 25px;
     width: 250px;
+}
+.but:hover{
+    background-position: right center;
+    transition: .5s;
 }
 .links {
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 3%;
+    width: 100vw;
+    border-radius: 5px;
     gap: 50px;
-    margin: 20px;
+
+}
+.links a:hover,
+.links a:focus{
+    background-position: right center;
+    transition: .5s;
 }
 #projects{
     width: 50%;
-    border: 3px solid #85144b;
+    border: 3px solid ;
     border-radius: 5px;
     margin-bottom: 10px;
     margin-left: 30px;   
@@ -71,8 +188,7 @@
     justify-content: space-evenly;
 }
 .proj{
-    color:#AC9362;
-    background-color: #85144b;
+    background-image: linear-gradient(to right, #c33764, #1d2671);
     border-radius: 5px;
     width: 35%;
     display: flex;
@@ -96,9 +212,10 @@
 }
 .exp-buttons{
     color:#AC9362;
-    background-color: #85144b;
+    background-image: linear-gradient(to right, #c33764, #1d2671);
     border-radius: 5px;
-    width: 35%;
+    width: 75%;
+    height: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,9 +314,154 @@
 }
 
 
-html{
+
+
+#questionaire{
+    height: 100vh;
+}
+.center{
+    color: teal;
+    position: relative;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background:linear-gradient(to bottom left, #c33764, #1d2671);
+    border-radius: 10px;
+    padding: 10px;
+}
+.center h1{
+    text-align: center;
+    padding-bottom: 20px;
+    border-width: 0px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #D76D77, #998356) 1;
+    border-bottom-width: 2px;
+        background: linear-gradient(to right, #D76D77, #998356);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.center form{
+    padding: 0 40px;
+
+}
+form .txt_field{
+    position: relative;
+    border-width: 0px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #D76D77, #998356) 1;
+    border-bottom-width: 2px;
+    margin: 30px 0;
+}
+
+.txt_field input{
+    background: linear-gradient(to right, #D76D77, #998356);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #d86e79;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+
+.txt_field label{
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    background: linear-gradient(to right, #D76D77, #998356);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #D76D77;
+    transform: translateyY(50%);
+    font-size: 20px;
+    pointer-events: none;
+    transition: .5s;
+}
+.txt_field label{
+    background: linear-gradient(to right, #D76D77, #998356);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(to right, #D76D77, #998356) ;
+    transition: .5s;
+}
+.txt_field input:focus ~label,
+.txt_field input:valid ~label{
+    top: -15px;
+
+}
+
+.txt_field button:focus ~span::before,
+.txt_field button:valid ~span::before{
+
+    width: 100%;
+}
+
+button[type="submit"]{
+    width: 100%;
+    background-image:  linear-gradient(30deg, #998356 12%, transparent 12.5%, transparent 87%, #998356 87.5%, #998356), linear-gradient(150deg, #998356 12%, transparent 12.5%, transparent 87%, #998356 87.5%, #998356), linear-gradient(30deg, #998356 12%, transparent 12.5%, transparent 87%, #998356 87.5%, #998356), linear-gradient(150deg, #998356 12%, transparent 12.5%, transparent 87%, #998356 87.5%, #998356), linear-gradient(60deg, rgba(153,131,86,0.5) 25%, transparent 25.5%, transparent 75%, rgba(153,131,86,0.5) 75%, rgba(153,131,86,0.5)), linear-gradient(60deg, rgba(153,131,86,0.5) 25%, transparent 25.5%, transparent 75%, rgba(153,131,86,0.5) 75%, rgba(153,131,86,0.5));
+    background-size: 20px 35px;
+    background-position: 0 0, 0 0, 10px 17.5px, 10px 17.5px, 0 0, 10px 17.5px;
+    background-color: #d76d77;
+        height: 50px;
+    border: 1px solid;
+    border-radius: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-position: right center;
+    transition: .5s;
+}
+#btn-txt{
+    background: linear-gradient(to bottom left, #c33764, #1d2671);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+}
+.top .but-center{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    bottom: 0;
+    left: 25%;
+    background-image: linear-gradient(to right, #c33764, #1d2671);
+
+
+ 
+}
+#fact-container{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+}
+#fact{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    background: linear-gradient(to bottom left, #c33764, #1d2671);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
     
-    background-color: #F5F5DC;
-    box-sizing: border-box;
-    color: #85144b;
 }

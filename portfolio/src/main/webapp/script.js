@@ -82,3 +82,10 @@ function mod4Close(){
 }
 
 
+async function showFunFact(){
+    const response = await fetch('/hello');
+    const facts = await response.json();
+    const chosenFact = facts[Math.floor(Math.random()*3)];
+    const factpara = document.getElementById('fact')
+    factpara.innerText = chosenFact;
+}
