@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
 </head>
 <body>
     <script>
@@ -59,17 +61,34 @@
             -->
                <!--<div class="exp-box">--> 
 
-                    <div id="experience-list">
-                        <Button id="mod1-button" class="exp-buttons" onclick="mod1PopUp()"><h2>Data Science Intern</h2></Button>
-                        <Button id="mod2-button" class="exp-buttons" onclick="mod2PopUp()"><h2>Innovation Tech Intern</h2></Button>
-                        <Button id="mod3-button" class="exp-buttons" onclick="mod3PopUp()"><h2>Software Engineer Intern</h2></Button>
-                        <Button id="mod4-button" class="exp-buttons" onclick="mod4PopUp()"><h2>Data Science Researcher</h2></Button>
+                <div class="experience-list1">
+                    <Button id="mod1-button" class="proj" onclick="mod1PopUp()"><h2>Data Science Intern</h2></Button>
+                        <Button id="mod2-button" class="proj" onclick="mod2PopUp()"><h2>Innovation Tech Intern</h2></Button>
+                </div>
+                <div class="experience-list2">
+                
+                        <Button id="mod3-button" class="proj" onclick="mod3PopUp()"><h2>Software Engineer Intern</h2></Button>
+                        <Button id="mod4-button" class="proj" onclick="mod4PopUp()"><h2>Data Science Researcher</h2></Button>
     
     
-                    </div>
+                </div>
     
                 <!--</div>-->
-    
+                <div class="links">
+                    <a href="https://github.com/preethamm03">
+                        <button class="but">
+                            <i class="bi bi-github"></i>  Github
+                        </button>
+                    </a>
+                    <button class="but" onclick="showFunFact();">
+                            Fun-Fact!
+                        </button>
+                    <a href="https://www.linkedin.com/in/preetham-madesh-0b55741b2/">
+                        <button class="but">
+                            <i class="bi bi-linkedin"></i> LinkedIn
+                        </button>
+                    </a>
+                </div>
             </div>
     </div>
 

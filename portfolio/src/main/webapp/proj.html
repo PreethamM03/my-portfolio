@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Page</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
 </head>
 <body>
     <script>
@@ -30,21 +35,23 @@
             <div class="sections" id="professional">
                 
                    
-                        <div id="experience-list">
+                        <div class="experience-list1">
                             <button class="proj" onclick="window.open('https://github.com/PreethamM03/Password-Manager', '_blank');">
-                                <center>Password Manager</center>
+                                <h2>Password Manager</h2>
                             </button>
                             <button class="proj"
                                 onclick="window.open('https://github.com/PreethamM03/DERI-Project', '_blank');">
-                                <center>Twitter Bot Scraping</center>
+                                <h2>Twitter Bot Scraping</h2>
                             </button>
+                        </div>
+                        <div class="experience-list2">    
                             <button class="proj"
                                 onclick="window.open('https://github.com/PreethamM03/Landing-Page', '_blank');">
-                                <center>Profesional Landing Page</center>
+                                <h2>Profesional Landing Page</h2>
                             </button>
                             <button class="proj"
                                 onclick="window.open('https://github.com/PreethamM03/Password-Manager', '_blank');">
-                                <center>Etch a Sketch</center>
+                                <h2>Etch a Sketch</h2>
                             </button>
                         </div>
 
@@ -55,10 +62,73 @@
           
     
             </div>
+            <button class="but-center" onclick="document.getElementById('personal').scrollIntoView();"><h2>Sentiment Analysis and Translation Tool</h2></button>
+
     </div>
 
 
 
+
+
+
+
+
+    <div class="sections" id="personal">
+        <!--<h1>
+            <center>Personal Life</center>
+        </h1>
+        <button id="fun-fact" onclick="showFunFact();">
+            Fun Fact About Me!
+        </button>
+        <p id="fact"></p>-->
+       
+        
+    
+        <div id="questionaire" data-aos="zoom-out-up">
+            <div class="center">
+                <h1>Enter some text for Sentiment Analysis!</h1>
+                                
+                <form id=senti-form  >
+                    <div class="txt_field">
+                        <input id="q1" type="text" required>
+                        <span></span>
+                        <label >What is your name?</label>
+                    </div>
+                    <div class="form-buttons">
+                        <button id="senti-but" type=button onclick="requestHindi();"><span id="btn-txt">Hindi!</span></button>
+                        <button id="senti-but" type=button onclick="requestSenti();"><span id="btn-txt">Sentiment!</span></button>
+                        <button id="senti-but" type=button onclick="requestSpanish();"><span id="btn-txt">Spanish!</span></button>
+                    </div>
+                    
+
+                
+                </form>
+            </div>
+            <div id="fact-container">
+                <div id="sentiment"></div>
+                <div id="translated"></div>
+            </div>
+            
+            <div class="links">
+                <a href="https://github.com/preethamm03">
+                    <button class="but">
+                        <i class="bi bi-github"></i> Github
+                    </button>
+                </a>
+                <button class="but" onclick="showFunFact();">
+                        Fun-Fact!
+                    </button>
+                <a href="https://www.linkedin.com/in/preetham-madesh-0b55741b2/">
+                    <button class="but">
+                        <i class="bi bi-linkedin"></i> LinkedIn
+                    </button>
+                </a>
+            </div>
+          
+            
+        </div>
+        
+    </div>
 
 
     

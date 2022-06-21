@@ -63,7 +63,7 @@ header{
     font-size: 20px;
 
 }
-.top button{
+.top .proj{
     margin: 10px;
     font-size: 20px;
     padding: 15px;
@@ -132,6 +132,9 @@ header{
 
 .sections {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;  
 
 }
 #personal{
@@ -140,6 +143,7 @@ header{
     margin: 0;
     padding: 0;
     overflow: hidden;
+
 
 
 }
@@ -203,12 +207,29 @@ background-color: #d76d77;
     border: 3px solid #85144b;
     border-radius: 5px;
     margin-left: 250px;
+    
 
 }
-#experience-list {
+.experience-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
+}
+.experience-list1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+}
+.experience-list2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 0 auto;
+
 }
 .exp-buttons{
     color:#AC9362;
@@ -330,6 +351,16 @@ background-color: #d76d77;
     border-radius: 10px;
     padding: 10px;
 }
+.center .but{
+    width:50px;
+}
+.center p{
+    background: linear-gradient(to right, #D76D77, #998356);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    justify-content: center;
+}
 .center h1{
     text-align: center;
     padding-bottom: 20px;
@@ -409,7 +440,8 @@ form .txt_field{
     width: 100%;
 }
 
-button[type="submit"]{
+button[type="submit"],
+button[type="button"]{
     width: 100%;
     background-image:  linear-gradient(30deg, #998356 12%, transparent 12.5%, transparent 87%, #998356 87.5%, #998356), linear-gradient(150deg, #998356 12%, transparent 12.5%, transparent 87%, #998356 87.5%, #998356), linear-gradient(30deg, #998356 12%, transparent 12.5%, transparent 87%, #998356 87.5%, #998356), linear-gradient(150deg, #998356 12%, transparent 12.5%, transparent 87%, #998356 87.5%, #998356), linear-gradient(60deg, rgba(153,131,86,0.5) 25%, transparent 25.5%, transparent 75%, rgba(153,131,86,0.5) 75%, rgba(153,131,86,0.5)), linear-gradient(60deg, rgba(153,131,86,0.5) 25%, transparent 25.5%, transparent 75%, rgba(153,131,86,0.5) 75%, rgba(153,131,86,0.5));
     background-size: 20px 35px;
@@ -422,7 +454,8 @@ button[type="submit"]{
     cursor: pointer;
 }
 
-button[type="submit"]:hover{
+button[type="submit"]:hover,
+button[type="button"]:hover{
     background-position: right center;
     transition: .5s;
 }
@@ -432,7 +465,21 @@ button[type="submit"]:hover{
     -webkit-text-fill-color: transparent;
     font-size: 24px;
 }
-.top .but-center{
+ .top .but-center{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    bottom: 0;
+    left: 25%;
+    background-image: linear-gradient(to right, #c33764, #1d2671);
+
+
+ 
+}
+#personal .but-center{
     display: flex;
     position: absolute;
     justify-content: center;
@@ -450,12 +497,13 @@ button[type="submit"]:hover{
     width: 100vw;
     height: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
     bottom: 10%;
 }
-#fact{
+#fact, #translated, #sentiment{
     display: flex;
     flex-grow: 1;
     justify-content: center;
@@ -465,3 +513,27 @@ button[type="submit"]:hover{
     font-size: 24px;
     
 }
+.form-buttons{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-evenly
+}
+.form-buttons button {
+    width: 25%;
+}
+i{
+    margin-right:5px
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top:10px;
+    background: linear-gradient(to bottom left, #c33764, #1d2671);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#map {
+    height: 100%;
+  }
+  

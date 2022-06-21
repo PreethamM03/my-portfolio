@@ -89,3 +89,60 @@ async function showFunFact(){
     const factpara = document.getElementById('fact')
     factpara.innerText = chosenFact;
 }
+async function requestHindi() {
+    const text = document.getElementById('q1').value;
+
+    const resultContainer = document.getElementById('translated');
+    resultContainer.innerText = 'Loading...';
+
+    const params = new URLSearchParams();
+    params.append('q1', text);
+    fetch('/translate-hindi', {
+      method: 'POST',
+      body: params
+    }).then(response => response.text())
+    .then((translatedMessage) => {
+      resultContainer.innerText = translatedMessage;
+    });
+
+
+}
+async function requestSpanish() {
+    const text = document.getElementById('q1').value;
+
+    const resultContainer = document.getElementById('translated');
+    resultContainer.innerText = 'Loading...';
+
+    const params = new URLSearchParams();
+    params.append('q1', text);
+    fetch('/translate-spanish', {
+      method: 'POST',
+      body: params
+    }).then(response => response.text())
+    .then((translatedMessage) => {
+      resultContainer.innerText = translatedMessage;
+    });
+
+
+}
+async function requestSenti() {
+    const text = document.getElementById('q1').value;
+
+    const resultContainer = document.getElementById('sentiment');
+    resultContainer.innerText = 'Loading...';
+
+    const params = new URLSearchParams();
+    params.append('q1', text);
+    fetch('/sentiment', {
+      method: 'POST',
+      body: params
+    }).then(response => response.text())
+    .then((sentiment) => {
+      resultContainer.innerText = "Sentiment Analysis Score: " +sentiment;
+    });
+
+
+}
+
+
+
