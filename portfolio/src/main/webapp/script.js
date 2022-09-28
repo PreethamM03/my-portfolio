@@ -141,7 +141,6 @@ async function requestSenti() {
       resultContainer.innerText = "Sentiment Analysis Score: " +sentiment;
     });
 
-
 }
 
 
